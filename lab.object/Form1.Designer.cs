@@ -30,11 +30,11 @@
         {
             this.button_exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.OutputA1 = new System.Windows.Forms.TextBox();
+            this.OutA1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.OutputA2 = new System.Windows.Forms.TextBox();
-            this.OutputA3 = new System.Windows.Forms.TextBox();
+            this.OutA2 = new System.Windows.Forms.TextBox();
+            this.OutA3 = new System.Windows.Forms.TextBox();
             this.button_generate = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.OutModul = new System.Windows.Forms.TextBox();
@@ -62,16 +62,16 @@
             this.label1.Text = "A1:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // OutputA1
+            // OutA1
             // 
-            this.OutputA1.Enabled = false;
-            this.OutputA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OutputA1.Location = new System.Drawing.Point(199, 20);
-            this.OutputA1.Name = "OutputA1";
-            this.OutputA1.ReadOnly = true;
-            this.OutputA1.Size = new System.Drawing.Size(68, 26);
-            this.OutputA1.TabIndex = 2;
-            this.OutputA1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.OutA1.Enabled = false;
+            this.OutA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OutA1.Location = new System.Drawing.Point(199, 20);
+            this.OutA1.Name = "OutA1";
+            this.OutA1.ReadOnly = true;
+            this.OutA1.Size = new System.Drawing.Size(68, 26);
+            this.OutA1.TabIndex = 2;
+            this.OutA1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -95,25 +95,26 @@
             this.label3.Text = "A3:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // OutputA2
+            // OutA2
             // 
-            this.OutputA2.Enabled = false;
-            this.OutputA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OutputA2.Location = new System.Drawing.Point(315, 20);
-            this.OutputA2.Name = "OutputA2";
-            this.OutputA2.ReadOnly = true;
-            this.OutputA2.Size = new System.Drawing.Size(68, 26);
-            this.OutputA2.TabIndex = 7;
+            this.OutA2.Enabled = false;
+            this.OutA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OutA2.Location = new System.Drawing.Point(315, 20);
+            this.OutA2.Name = "OutA2";
+            this.OutA2.ReadOnly = true;
+            this.OutA2.Size = new System.Drawing.Size(68, 26);
+            this.OutA2.TabIndex = 7;
+            this.OutA2.TextChanged += new System.EventHandler(this.OutputA2_TextChanged);
             // 
-            // OutputA3
+            // OutA3
             // 
-            this.OutputA3.Enabled = false;
-            this.OutputA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.OutputA3.Location = new System.Drawing.Point(431, 20);
-            this.OutputA3.Name = "OutputA3";
-            this.OutputA3.ReadOnly = true;
-            this.OutputA3.Size = new System.Drawing.Size(68, 26);
-            this.OutputA3.TabIndex = 8;
+            this.OutA3.Enabled = false;
+            this.OutA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OutA3.Location = new System.Drawing.Point(431, 20);
+            this.OutA3.Name = "OutA3";
+            this.OutA3.ReadOnly = true;
+            this.OutA3.Size = new System.Drawing.Size(68, 26);
+            this.OutA3.TabIndex = 8;
             // 
             // button_generate
             // 
@@ -144,7 +145,7 @@
             this.OutModul.Multiline = true;
             this.OutModul.Name = "OutModul";
             this.OutModul.ReadOnly = true;
-            this.OutModul.Size = new System.Drawing.Size(80, 32);
+            this.OutModul.Size = new System.Drawing.Size(233, 32);
             this.OutModul.TabIndex = 11;
             // 
             // Form1
@@ -155,11 +156,11 @@
             this.Controls.Add(this.OutModul);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button_generate);
-            this.Controls.Add(this.OutputA3);
-            this.Controls.Add(this.OutputA2);
+            this.Controls.Add(this.OutA3);
+            this.Controls.Add(this.OutA2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.OutputA1);
+            this.Controls.Add(this.OutA1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_exit);
             this.Name = "Form1";
@@ -173,11 +174,11 @@
 
         private System.Windows.Forms.Button button_exit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox OutputA1;
+        private System.Windows.Forms.TextBox OutA1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox OutputA2;
-        private System.Windows.Forms.TextBox OutputA3;
+        private System.Windows.Forms.TextBox OutA2;
+        private System.Windows.Forms.TextBox OutA3;
         private System.Windows.Forms.Button button_generate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox OutModul;
